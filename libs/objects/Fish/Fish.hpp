@@ -49,6 +49,8 @@ public:
 
 private:
     static int fish_count;
+
+protected:
     string name;
     int full_period; // periode kenyang
     bool is_hungry;
@@ -101,79 +103,6 @@ public:
 
 private:
     static int piranha_count;
-};
-
-class Food {
-public:
-    // CTOR CCTOR DTOR
-    Food();
-    Food(const Food& food);
-    ~Food();
-    Food& operator=(const Food& food);
-
-    // GETTER SETTER
-    string getName() const;
-    int getMovementSpeed() const;
-    Point getPosition() const;
-
-    void setName(string _name);
-    void setMovementSpeed(int _movement_speed);
-    void setPosition(Point _position);
-
-    // METHODS
-
-
-private:
-    string name;
-    int movement_speed;
-    Point position;
-};
-
-class Coin {
-public:
-    // CTOR CCTOR DTOR
-    Coin();
-    Coin(const Coin& coin);
-    ~Coin();
-    Coin& operator=(const Coin& coin);
-
-    // GETTER SETTER
-    int getValue() const;
-    Point getPosition() const;
-
-    void setValue(int value);
-    void setPosition(Point position);
-
-    // METHODS
-
-
-private:
-    int value;
-    Point position;
-};
-
-class Siput {
-public:
-// CTOR CCTOR DTOR
-    Siput();
-    Siput(const Siput& siput);
-    ~Siput();
-    Siput& operator= (const Siput& siput);
-
-// GETTER SETTER
-    int getMovementSpeed() const;
-    Point getPoint() const;
-
-    void setMovementSpeed(int _movement_speed);
-    void setPosition(int _position);
-
-// METHODS
-    void Move();
-    void takeCoin();
-
-private:
-    int movement_speed;
-    Point position;
 };
 
 #endif
