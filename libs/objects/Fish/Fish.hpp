@@ -1,6 +1,6 @@
 /*
- * File:
- * Description:
+ * File: Fish.hpp
+ * Description: Abstraction of class Fish
  * Author :
  * Version :
  * USAGE : #include "Fish.hpp"
@@ -32,6 +32,7 @@ public:
     int getCoinPeriod() const;
     int getMovementSpeed() const;
     Point getPosition() const;
+    char getOrientation() const;
 
     static void setFishCount();
     void setName(string _name);
@@ -41,6 +42,7 @@ public:
     void setCoinPeriod(int _coin_period);
     void setMovementSpeed(int movement_speed);
     void setPosition(Point _position);
+    void setOrientation(char _orientation);
 
     // METHODS
     void Move();
@@ -58,51 +60,7 @@ protected:
     int coin_period;
     int movement_speed;
     Point position;
-};
-
-class Guppy:public Fish {
-public:
-    // CTOR CCTOR DTOR
-    Guppy();
-    Guppy(const Guppy& guppy);
-    ~Guppy();
-    Guppy& operator=(const Guppy& guppy);
-
-    // GETTER SETTER
-    static int getGuppyCount() const;
-    int getGrowthLevel() const;
-
-    static void setGuppyCount();
-    void setGrowthLevel(int _growth_level);
-
-    // METHODS
-    void DropCoin();
-    void Eat();
-
-private:
-    static int guppy_count;
-    int growth_level;
-};
-
-class Piranha:public Fish {
-public:
-    // CTOR CCTOR DTOR
-    Piranha();
-    Piranha(const Piranha& piranha);
-    ~Piranha();
-    Piranha& operator=(const Piranha& piranha);
-
-    // GETTER SETTER
-    static int getPiranhaCount() const;
-
-    static void setPiranhaCount();
-
-    // METHODS
-    void DropCoin();
-    void Eat();
-
-private:
-    static int piranha_count;
+    char orientation; // 'l' for left and 'r' for right
 };
 
 #endif

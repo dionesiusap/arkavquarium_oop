@@ -1,6 +1,6 @@
 /*
- * File:
- * Description:
+ * File: Pet.hpp
+ * Description: Abstraction of class Snail
  * Author :
  * Version :
  * USAGE : #include "Pet.hpp"
