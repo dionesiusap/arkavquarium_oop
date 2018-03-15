@@ -27,6 +27,8 @@ public:
     friend void DeleteCoinFromCoins(const Coin &coin);
     friend void DeleteFoodfromFoods(const Food &food);
 
+    void MoveAll();
+
   private:
     int width;
     int height;
