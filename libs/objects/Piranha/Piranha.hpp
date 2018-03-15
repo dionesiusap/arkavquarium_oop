@@ -16,7 +16,7 @@
 
 using namespace std;
 
-class Piranha : public Fish {
+class Piranha : public Fish, public CoinProducer {
   public:
     // CTOR CCTOR DTOR
     Piranha();

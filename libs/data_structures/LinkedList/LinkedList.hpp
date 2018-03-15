@@ -76,6 +76,7 @@ public:
     Node<T>* getNode(int) const;
     void add(T);
     void remove(T);
+    void del(int);
     T get(int i) const;
     T operator[](int i) const;
 private:
@@ -226,4 +227,26 @@ Node<T>* LinkedList<T>::getNode(int i) const{
         }
         return current;        
     }
+}
+template <class T>
+void LinkedList<T>::del(int i){
+    if(i>=ammount){
+       throw "List Index is beyond the ammount of data"; 
+    }
+    Node<T>* prev;
+    Node<T>* current = head;
+    int j = 0;
+    while(j != i){ 
+        prev = current;
+        current = current->getNext();
+    }
+    Node<T>* curr = current;
+    if(curr == head){
+        head = curr->getNext();
+    }else{
+        current = current->getNext();
+        prev->setNext(current);
+    }
+    delete curr;
+    ammount--;
 }

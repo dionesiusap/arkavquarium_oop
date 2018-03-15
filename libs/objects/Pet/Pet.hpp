@@ -12,8 +12,9 @@
 #include <bits/stdc++.h>
 #include "Point.hpp"
 #include <iostream>
+#include "CoinGatherer"
 
-class Snail {
+class Snail : public CoinGatherer{
 public:
 // CTOR CCTOR DTOR
     Snail();

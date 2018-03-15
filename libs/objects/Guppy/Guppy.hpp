@@ -16,7 +16,7 @@
 
 using namespace std;
 
-class Guppy : public Fish {
+class Guppy : public Fish, public CoinProducer {
   public:
     // CTOR CCTOR DTOR
     Guppy();
