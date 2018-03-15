@@ -1,5 +1,10 @@
+#ifndef LINKED_LIST_HPP
+#define LINKED_LIST_HPP
+
 #include <iostream>
+
 using namespace std;
+
 template <class T>
 class Node{
 public:
@@ -227,3 +232,5 @@ Node<T>* LinkedList<T>::getNode(int i) const{
         return current;        
     }
 }
+
+#endif

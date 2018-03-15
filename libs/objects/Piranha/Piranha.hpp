@@ -25,7 +25,7 @@ class Piranha : public Fish {
     Piranha &operator=(const Piranha &piranha);
 
     // GETTER SETTER
-    static int getPiranhaCount() const;
+    static int getPiranhaCount();
 
     static void setPiranhaCount();
 

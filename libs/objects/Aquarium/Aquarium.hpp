@@ -30,7 +30,7 @@ public:
   private:
     int width;
     int height;
-    LinkedList<Fish> fish;
+    LinkedList<Fish*> fish;
     LinkedList<Coin> coins;
     LinkedList<Food> foods;
     Snail snail;
