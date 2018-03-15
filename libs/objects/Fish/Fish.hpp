@@ -24,7 +24,7 @@ public:
     Fish& operator=(const Fish& fish);
 
     // GETTER SETTER
-    static int getFishCount() const;
+    static int getFishCount();
     string getName() const;
     int getFullPeriod() const;
     bool getIsHungry() const;

@@ -1,5 +1,10 @@
+#ifndef LINKED_LIST_HPP
+#define LINKED_LIST_HPP
+
 #include <iostream>
+
 using namespace std;
+
 template <class T>
 class Node{
 public:
@@ -250,3 +255,4 @@ void LinkedList<T>::del(int i){
     delete curr;
     ammount--;
 }
+#endif

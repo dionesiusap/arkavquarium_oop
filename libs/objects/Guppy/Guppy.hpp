@@ -25,7 +25,7 @@ class Guppy : public Fish, public CoinProducer {
     Guppy &operator=(const Guppy &guppy);
 
     // GETTER SETTER
-    static int getGuppyCount() const;
+    static int getGuppyCount();
     int getGrowthLevel() const;
 
     static void setGuppyCount();

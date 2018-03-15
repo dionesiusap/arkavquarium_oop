@@ -1,9 +1,9 @@
 /*
- * File:
- * Description:
+ * File: Food.hpp
+ * Description: Abstraction of class Food
  * Author :
  * Version :
- * USAGE : #include "Coin.hpp"
+ * USAGE : #include "Food.hpp"
 */
 
 #ifndef FOOD_HPP
