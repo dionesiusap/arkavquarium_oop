@@ -1,30 +1,47 @@
+/*
+Class Node dan LinkedList
+*/
 #ifndef LINKED_LIST_HPP
 #define LINKED_LIST_HPP
 
 #include <iostream>
 
 using namespace std;
-
+/*
+Kelas node merupakan representasi data pada LinkedList
+Model LinkedList yang diimplementasikan adalah model dengan
+satu pointer dan tidak membuat loop
+*/
 template <class T>
 class Node{
 public:
+    //konstruktor kelas node dengan nilai sesuai kelas template
     Node(T);
+    //copy constructor untuk kelas node
     Node(const Node& N){
         data = N.data;
         next = N.next;
     }
+    /*tidak ada destruktor karena Node* next tidak ingin dihancurkan ketika kelas Node dihancurkan*/
+    
+    //operator assignment untuk kelas node
     Node& operator=(const Node& N){
         data = N.data;
         next = N.next;
         return *this;
     }
+    //setter dan getter
+    //getter untuk node selanjutnya
     Node* getNext() const;
+    //getter untuk value yang disimpan dalam node
     T getVal() const;
+    //setter untuk data yang disimpan node
     void setData(T);
+    //setter untuk node selanjutnya
     void setNext(Node*);
 private:
-    T data;
-    Node* next;
+    T data;         //data yang disimpan oleh tiap Node
+    Node* next;     //pointer ke node selanjutnya
 };
 
 template <class T>
@@ -48,8 +65,16 @@ template <class T>
 void Node<T>::setNext(Node<T>* N){
     next = N;
 }
+//deklarasi kelas LinkedList
 template <class T>
 class LinkedList;
+
+
+/*
+implementasi operator stream untuk kelas LinkedList
+contoh penggunaan : 
+    cin >> List >> List;
+*/
 template <class T>
 ostream& operator<<(ostream& s, const LinkedList<T>& L){
     for(int i = 0; i < L.getAmmount(); i++){
@@ -64,9 +89,13 @@ istream& operator>>(istream& s,LinkedList<T>& L){
     L.add(x);
     return s;
 }
+//------------------------------
+
+//deklarasi badan kelas LinkedList
 template <class T>
 class LinkedList{
 public:
+    //constructor, copy constructor, destructor, operator=, dan operator stream
     LinkedList();
     LinkedList(Node<T>);
     ~LinkedList();
@@ -74,15 +103,25 @@ public:
     LinkedList& operator=(const LinkedList&);
     friend ostream& operator<< <>(ostream& s,const LinkedList& L);
     friend istream& operator>> <>(istream& s,LinkedList& L);
+    
     //method
+    //mengembalikan indeks LinkedList pertama kali yang mengandung nilai T
     int find(T) const;
+    //mengembalikan apakah LinkedList kosong
     bool isEmpty() const;
+    //mengembalikan jumlah elemen
     int getAmmount()const;
+    //mengembalikan node di indeks ke-i
     Node<T>* getNode(int) const;
+    //menambahkan Node dengan nilai T di akhir LinkedList
     void add(T);
+    //menghapus seluruh Node dalam LinkedList yang memiliki value T
     void remove(T);
+    //menghapus Node sesuai dengan indeks masukan
     void del(int);
+    //mengembalikan nilai dari node pada indeks ke-i
     T get(int i) const;
+    //operator [] sesuai pada array, mengembalikan nilai dari node pada indeks ke-i
     T operator[](int i) const;
 private:
     Node<T> *head;
@@ -110,8 +149,8 @@ LinkedList<T>::~LinkedList(){
     Node<T>* current = head;
     Node<T>* next = 0;
     if(current){
-        delete current;
         next = head->getNext();
+        delete current;
     }
     while(next){
         current = next;
