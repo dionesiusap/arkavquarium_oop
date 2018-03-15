@@ -1,0 +1,4 @@
+<map id="Guppy" name="Guppy">
+<area shape="rect" id="node2" href="$class_fish.html" title="{Fish\n|# name\l# full_period\l# is_hungry\l# hunger_period\l# coin_period\l# movement_speed\l# position\l# orientation\l&#45; fish_count\l|+ Fish()\l+ Fish()\l+ ~Fish()\l+ operator=()\l+ getName()\l+ getFullPeriod()\l+ getIsHungry()\l+ getHungerPeriod()\l+ getCoinPeriod()\l+ getMovementSpeed()\land 13 more...\l+ getFishCount()\l+ setFishCount()\l}" alt="" coords="5,5,161,376"/>
+<area shape="rect" id="node3" href="$class_coin_producer.html" title="{CoinProducer\n||&#45; DropCoin()\l}" alt="" coords="185,152,285,229"/>
+</map>

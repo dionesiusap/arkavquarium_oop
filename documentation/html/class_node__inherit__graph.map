@@ -1,0 +1,5 @@
+<map id="Node&lt; T &gt;" name="Node&lt; T &gt;">
+<area shape="rect" id="node2" href="$class_node.html" title="{Node\&lt; Coin \&gt;\n|&#45; data\l&#45; next\l|+ Node()\l+ Node()\l+ operator=()\l+ getNext()\l+ getVal()\l+ setData()\l+ setNext()\l}" alt="" coords="5,248,108,428"/>
+<area shape="rect" id="node3" href="$class_node.html" title="{Node\&lt; Fish *\&gt;\n|&#45; data\l&#45; next\l|+ Node()\l+ Node()\l+ operator=()\l+ getNext()\l+ getVal()\l+ setData()\l+ setNext()\l}" alt="" coords="133,248,239,428"/>
+<area shape="rect" id="node4" href="$class_node.html" title="{Node\&lt; Food \&gt;\n|&#45; data\l&#45; next\l|+ Node()\l+ Node()\l+ operator=()\l+ getNext()\l+ getVal()\l+ setData()\l+ setNext()\l}" alt="" coords="264,248,369,428"/>
+</map>

@@ -1,0 +1,3 @@
+<map id="CoinGatherer" name="CoinGatherer">
+<area shape="rect" id="node2" href="$class_snail.html" title="{Snail\n|&#45; movement_speed\l&#45; position\l|+ Snail()\l+ Snail()\l+ ~Snail()\l+ operator=()\l+ getMovementSpeed()\l+ getPoint()\l+ setMovementSpeed()\l+ setPosition()\l+ Move()\l+ takeCoin()\l}" alt="" coords="5,131,161,355"/>
+</map>

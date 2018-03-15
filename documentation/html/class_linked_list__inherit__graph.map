@@ -1,0 +1,5 @@
+<map id="LinkedList&lt; T &gt;" name="LinkedList&lt; T &gt;">
+<area shape="rect" id="node2" href="$class_linked_list.html" title="{LinkedList\&lt; Coin \&gt;\n|&#45; head\l&#45; ammount\l|+ LinkedList()\l+ LinkedList()\l+ LinkedList()\l+ ~LinkedList()\l+ operator=()\l+ find()\l+ isEmpty()\l+ getAmmount()\l+ getNode()\l+ add()\l+ remove()\l+ del()\l+ get()\l+ operator[]()\l}" alt="" coords="5,351,136,633"/>
+<area shape="rect" id="node3" href="$class_linked_list.html" title="{LinkedList\&lt; Fish *\&gt;\n|&#45; head\l&#45; ammount\l|+ LinkedList()\l+ LinkedList()\l+ LinkedList()\l+ ~LinkedList()\l+ operator=()\l+ find()\l+ isEmpty()\l+ getAmmount()\l+ getNode()\l+ add()\l+ remove()\l+ del()\l+ get()\l+ operator[]()\l}" alt="" coords="161,351,295,633"/>
+<area shape="rect" id="node4" href="$class_linked_list.html" title="{LinkedList\&lt; Food \&gt;\n|&#45; head\l&#45; ammount\l|+ LinkedList()\l+ LinkedList()\l+ LinkedList()\l+ ~LinkedList()\l+ operator=()\l+ find()\l+ isEmpty()\l+ getAmmount()\l+ getNode()\l+ add()\l+ remove()\l+ del()\l+ get()\l+ operator[]()\l}" alt="" coords="319,351,454,633"/>
+</map>

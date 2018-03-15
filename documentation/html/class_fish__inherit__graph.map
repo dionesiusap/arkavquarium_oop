@@ -1,0 +1,4 @@
+<map id="Fish" name="Fish">
+<area shape="rect" id="node2" href="$class_guppy.html" title="{Guppy\n|&#45; growth_level\l&#45; guppy_count\l|+ Guppy()\l+ Guppy()\l+ ~Guppy()\l+ operator=()\l+ getGrowthLevel()\l+ setGrowthLevel()\l+ DropCoin()\l+ Eat()\l+ getGuppyCount()\l+ setGuppyCount()\l}" alt="" coords="5,424,137,648"/>
+<area shape="rect" id="node3" href="$class_piranha.html" title="{Piranha\n|&#45; piranha_count\l|+ Piranha()\l+ Piranha()\l+ ~Piranha()\l+ operator=()\l+ DropCoin()\l+ Eat()\l+ getPiranhaCount()\l+ setPiranhaCount()\l}" alt="" coords="162,446,301,626"/>
+</map>
